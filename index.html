@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!-- -------------------------------CALCULATOR------------------------------------------------- -->
+
+    <div class="calculator">
+
+        <!-- -------------------------------DATE------------------------------------------------- -->
+        <div class="calculator__date date">
+            <div class="date__storage storage">
+                <div class="storage__title">Storage:<label class="storage__storage-number"></label></div>
+                <input class="storage__input" type="range" min="0" max="1000" step="1" list="minMax"
+                    onchange="showscale()" />
+            </div>
+            <div class="date__transfer transfer">
+                <div class="transfer__title">Transfer:<label class="transfer__transfer-number"></label></div>
+                <input class="transfer__input" type="range" min="0" max="1000" step="1" list="minMax"
+                    onchange="showscale()" />
+            </div>
+            <datalist id="minMax">
+                <option value="0">
+                <option value="1000">
+            </datalist>
+        </div>
+
+        <!-- -------------------------------LEVEL------------------------------------------------- -->
+
+        <div class="calculator__level level">
+            <div class="level__block">
+                <div class="level__name-and-img">
+                    <div class="level__name-and-check">
+                        <h3 class="level__name-company">backblaze</h3>
+                    </div>
+                    <img class="level__icon-company" />
+                </div>
+                <div class="level__scale">
+                    <div class="level__scale1"></div>
+                    <label class="level__number number1"></label>
+                </div>
+            </div>
+            <div class="level__block">
+                <div class="level__name-and-img">
+                    <div class="level__name-and-check">
+                        <h3 class="level__name-company">bunny</h3>
+                        <div class="level__button">
+                            <input class="level__radio" type="radio" id="HDD" name="check-button1"
+                                onclick="showscale()" />
+                            <div>HDD</div>
+                            <!-- <label for="HDD">HDD</label> -->
+                            <input class="level__radio" type="radio" id="SSD" name="check-button1"
+                                onclick="showscale()" />
+                            <div>SSD</div>
+                            <!-- <label for="SSD">SSD</label> -->
+                        </div>
+                    </div>
+                    <img class="level__icon-company" />
+                </div>
+                <div class="level__scale">
+                    <div class="level__scale2"></div>
+                    <label class="level__number number2"></label>
+                </div>
+            </div>
+            <div class="level__block">
+                <div class="level__name-and-img">
+                    <div class="level__name-and-check">
+                        <h3 class="level__name-company">scaleway</h3>
+                        <div class="level__button">
+                            <input class="level__radio" type="radio" id="Multi" name="check-button2"
+                                onclick="showscale()" />
+                            <div>Multi</div>
+                            <!-- <label for="Multi">Multi</label> -->
+                            <input class="level__radio" type="radio" id="Single" name="check-button2"
+                                onclick="showscale()" />
+                            <div>Single</div>
+                            <!-- <label for="Single">Single</label> -->
+                        </div>
+                    </div>
+                    <img class="level__icon-company" />
+                </div>
+                <div class="level__scale">
+                    <div class="level__scale3"></div>
+                    <label class="level__number number3"></label>
+                </div>
+            </div>
+            <div class="level__block">
+                <div class="level__name-and-img">
+                    <div class="level__name-and-check">
+                        <h3 class="level__name-company">vultr</h3>
+                    </div>
+                    <img class="level__icon-company" />
+                </div>
+                <div class="level__scale">
+                    <div class="level__scale4"></div>
+                    <label class="level__number number4"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

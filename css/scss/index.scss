@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 700px;
+    height: 300px;
+
+    &__date {
+        margin: 10px 0 30px 20px;
+    }
+
+    .date {
+        display: flex;
+
+        &__storage {}
+
+        .storage {
+
+            &__title {}
+
+            &__storage-number {
+                margin-left: 70%;
+            }
+
+            &__input {
+                width: 300px;
+            }
+        }
+
+        &__transfer {
+            margin-left: 50px;
+        }
+
+        .transfer {
+
+            &__title {}
+
+            &__transfer-number {
+                margin-left: 70%;
+            }
+
+            &__input {
+                width: 300px;
+            }
+        }
+    }
+
+    &__level {
+        margin: 10px 0 0 20px;
+    }
+
+    .level {
+
+        &__block {
+            display: flex;
+        }
+
+        &__name-and-img {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+        }
+
+        &__name-and-img:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &__name-and-check {}
+
+        &__name-company {}
+
+        &__icon-company {
+            border: 2px solid black;
+            width: 30px;
+            height: 30px;
+        }
+
+        &__scale {
+            border-left: 5px solid black;
+            margin-left: 10px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__scale1 {
+            border: 1px solid black;
+            background-color: red;
+            height: 20px;
+        }
+
+        &__scale2 {
+            border: 1px solid black;
+            background-color: orange;
+            height: 20px;
+        }
+
+        &__scale3 {
+            border: 1px solid black;
+            background-color: purple;
+            height: 20px;
+        }
+
+        &__scale4 {
+            border: 1px solid black;
+            background-color: blue;
+            height: 20px;
+        }
+
+        &__number {
+            margin-left: 5px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        &__button {
+            display: flex;
+        }
+
+        &__radio {
+            margin: 0 5px 0 5px;
+        }
+    }
+
+}
+
+@media (max-width: 715px) {
+    .calculator {
+        transform: rotate(-90deg);
+        margin: 200px;
+        width: 900px;
+        padding-left: 100px;
+
+        &__date {
+            float: left;
+            margin: 10px 0 30px -90px;
+        }
+
+        .date {
+            width: 100px;
+            display: block;
+            transform: rotate(90deg);
+
+            .storage {
+                width: 200px;
+
+                &__storage-number {
+                    margin-left: 60%;
+                }
+
+                &__input {
+                    width: 200px;
+                }
+            }
+
+            &__transfer {
+                float: left;
+                margin-left: 0;
+            }
+
+            .transfer {
+                width: 200px;
+
+                &__title {}
+
+                &__transfer-number {
+                    margin-left: 60%;
+                }
+
+                &__input {
+                    width: 200px;
+                }
+            }
+        }
+
+        &__level {
+            float: right;
+            margin: -129px 0 0 20px;
+        }
+
+        .level {
+
+            &__block {
+                display: flex;
+                height: 75px;
+            }
+
+            &__name-and-img {
+                width: 100px;
+            }
+
+            &__name-and-check {
+                transform: rotate(90deg);
+            }
+
+            &__name-company {
+                font-size: 15px;
+            }
+
+            &__scale {
+                border-left: 5px solid black;
+                margin-left: 10px;
+                width: 400px;
+                display: flex;
+                align-items: center;
+            }
+
+
+            &__button {
+                display: block;
+                width: 57px;
+                height: 40px;
+
+                div {
+                    float: right;
+                }
+            }
+
+            &__radio {
+                margin: 0 3px 0 0;
+            }
+        }
+
+    }
+}
